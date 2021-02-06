@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+
+<meta charset="UTF-8">
+  <title>Flight Fare Prediction API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1>Flight Fare Prediction</h1>
+<form action="{{ url_for('predict')}}" method='post'>
+<input type='text' name='Airline' placeholder='Airline' required='required'/><br><br>
+<input type='text' name='Date of Journey' placeholder='Date of Journey' required='required'/><br><br>
+<input type='text' name='Source' placeholder='Source' required='required'/><br><br>
+<input type='text' name='Destination' placeholder='Destination' required='required'/><br><br>
+<input type='text' name='Route' placeholder='Route' required='required'/><br><br>
+<input type='text' name='Dep_Time' placeholder='Departure Time' required='required'/><br><br>
+<input type='text' name='Arrival_Time' placeholder='Arrival Time' required='required'/><br><br>
+<input type='text' name='Duration' placeholder='Flight Duration' required='required'/><br><br>
+<input type='text' name='Total stops' placeholder='Total stops' required='required'/><br><br>
+<input type='text' name='Additional Info' placeholder='Additional Info' required='required'/><br><br>
+<br><button type='submit'>Predict</button>
+</form>
+</body>
+</html>
