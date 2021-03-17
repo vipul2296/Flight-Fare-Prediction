@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 
 app=Flask(__name__)
-model=pickle.load(open('D:\iSmile Technologies\Side Projects\Flight Fare prediction\Final_model.pkl','rb'))
+model=pickle.load(open('Final_model.pkl','rb'))
 
 @app.route('/',methods=['GET'])
 def home():
